@@ -41,11 +41,16 @@ public class Personagem {
 
   void comer(){
     if (fome >= 1){
+      if (itens>0){
       System.out.println(nome + " comendo...");
       // operador ternário
       energia = energia + 1 > 10 ? 10 : energia + 1;
       fome--;
+      itens--;
     }
+    else{
+      System.out.println(nome + " nao tem itens");
+    }}
     else{
       System.out.println(nome + " sem fome...");
     }
@@ -70,7 +75,7 @@ public class Personagem {
     }
   void exibirEstado(){
     System.out.printf(
-      "%s: e: %d, f: %d, s: %d\n",
+      "%s: e: %d, f: %d, s: %d, i: %d\n",
       nome,
       energia,
       fome,

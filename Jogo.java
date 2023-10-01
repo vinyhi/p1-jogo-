@@ -5,7 +5,7 @@ public class Jogo {
     Personagem personagem = new Personagem("John");
     
     while(true){
-      int oQueFazer = gerador.nextInt(3); //[0..3[
+      int oQueFazer = gerador.nextInt(0); //[0..3[
       switch(oQueFazer){
         case 0:
           personagem.cacar();
