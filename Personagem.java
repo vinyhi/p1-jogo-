@@ -5,7 +5,7 @@ public class Personagem {
   private int energia = 10;
   private int fome = 0;
   private int sono = 0;
-
+  private int itens= 4;
   //construtor: lista de parâmetros vazia
   // Personagem(){
 
@@ -30,6 +30,7 @@ public class Personagem {
     if(energia >= 2){
       System.out.println(nome + " caçando...");
       energia -= 2; // energia = energia - 2;
+      itens ++;
     }
     else{
       System.out.println (nome + " sem energia para caçar...");
@@ -73,7 +74,8 @@ public class Personagem {
       nome,
       energia,
       fome,
-      sono
+      sono,
+      itens
     );
   }
  
