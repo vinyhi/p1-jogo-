@@ -61,7 +61,12 @@ public class Personagem {
     }
 
   }
-
+    void morrer(){
+      if (energia <=0 ||fome>=10){
+        System.out.println(nome + " morreu");
+        System.exit(0);
+      }
+    }
   void exibirEstado(){
     System.out.printf(
       "%s: e: %d, f: %d, s: %d\n",
