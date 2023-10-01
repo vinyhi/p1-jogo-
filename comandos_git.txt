@@ -4,3 +4,5 @@ git config --local  user.name "vinicius bosso"
 git config --local  user.email "vinih_bosso@hotmail.com"
 git add .
 git commit -m "p1(jogo) morte do personagem"
+git remote add p1 https://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@github.com/vinyhi/p1-jogo-.git
+git pull p1
