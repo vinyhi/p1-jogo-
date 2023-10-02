@@ -19,5 +19,8 @@ git push p1
 git add .
 git commit -m "p1(jogo) batalha de personagem "
 git push p1
+git tag -a v1.0.0 -m "jogo finalizado" 
+git add .
+git commit -m "tag atribuida"
 
 "
