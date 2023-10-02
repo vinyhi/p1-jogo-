@@ -22,5 +22,10 @@ git push p1
 git tag -a v1.0.0 -m "jogo finalizado" 
 git add .
 git commit -m "tag atribuida"
+git push p1
+git push p1 --tags
+git add .
+git commit -m "README.md atualizado"
+
 
 "
