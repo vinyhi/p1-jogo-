@@ -9,7 +9,15 @@ git pull p1 main --allow-unrelated-histories
 git push p1
 git add .
 git commit -m "p1(jogo) estoque de itens
+git push p1
 git add .
 git commit -m "p1(jogo) novo personagem"
+git push p1
+git add .
+git commit -m "."
+git push p1
+git add .
+git commit -m "p1(jogo) batalha de personagem "
+git push p1
 
 "

@@ -69,11 +69,14 @@ public class Personagem {
   }
     int morrer(){
       if (energia <=0 ||fome>=10){
-        //System.out.println(nome + " esta morto");
+        //
         return 1;}
         else{
           return 0;
         }
+      }
+      void avisamorte(){
+      System.out.println(nome + " esta morto");  
       }
       void receberGolpe(){
         System.out.println(nome + " recebeu golpe");
