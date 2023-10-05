@@ -50,9 +50,12 @@ public class Personagem {
     }
     else{
       System.out.println(nome + " nao tem itens");
+      fome++;
+      energia--;
     }}
     else{
       System.out.println(nome + " sem fome...");
+      energia--;
     }
   }
 
@@ -64,6 +67,7 @@ public class Personagem {
     }
     else{
       System.out.println(nome + " sem sono");
+      energia--;
     }
 
   }

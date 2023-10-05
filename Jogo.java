@@ -6,12 +6,17 @@ public class Jogo {
     Random gerador3 = new Random();
     Personagem personagem = new Personagem("John");
     Personagem personagem2 = new Personagem("Dio", 10, 8, 0);
-    
+    System.out.println("jogo iniciando");
+    System.out.println("\n");
+    personagem.exibirEstado();
+    personagem2.exibirEstado();
+    System.out.println("_______________");
+
     while(true){
       
       int oQueFazer = gerador.nextInt(3); //[0..3[
-      if (personagem.morrer()==0){
-      switch(oQueFazer){
+      if(personagem.morrer()==0){
+        switch(oQueFazer){
         case 0:
           personagem.cacar();
           break;
@@ -42,9 +47,8 @@ public class Jogo {
         break;
       }
       personagem2.morrer();
-      personagem2.exibirEstado();
-    }
     
+    personagem2.exibirEstado();}
     int levougolpe = gerador3.nextInt(2); //[0..3[
         switch(levougolpe){
         case 0:
@@ -62,12 +66,14 @@ public class Jogo {
       if (personagem2.morrer()==1)
       {
       personagem2.avisamorte();
-      Thread.sleep(800);
+      Thread.sleep(8000);
+      
       if (personagem.morrer()==1&&personagem2.morrer()==1){
         System.exit(0);
       }
       
-    }}
+    }
+    System.out.println("_______________");}
 }}
 
 
